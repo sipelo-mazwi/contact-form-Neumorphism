@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sipelo Mazwi Contact <Form></Form></title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- modify this form HTML and place wherever you want your form -->
+
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/mrgrbogw"
+      method="POST"
+    >
+      <h1 class="heading">Contact Form</h1>
+      <div class="form-group">
+        <label class="form-label" for="name">Your name:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Fullname"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email"> Your email: </label>
+        <input
+          class="form-input"
+          type="email"
+          name="Email"
+          id="email"
+          required
+          placeholder="example@email.com"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contact">Your contact number:</label>
+        <input
+          class="form-input"
+          type="tel"
+          min="10"
+          max="10"
+          name="contact"
+          id="contact"
+          required
+          placeholder="012 345 6789"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message"> Your message: </label>
+        <textarea
+          class="form-input"
+          name="message"
+          id="message"
+          placeholder="Type in your message here"
+          required
+        ></textarea>
+      </div>
+
+      <!-- your other form fields go here -->
+
+      <button class="button" type="submit">Send</button>
+    </form>
+  </body>
+</html>
